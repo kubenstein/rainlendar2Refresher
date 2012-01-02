@@ -11,14 +11,15 @@ Checking interval is set to 20s.
 
 ##Setup
 * Disable rainleander2 autostart function ( options->general )
-* edit program and ics path in rainlendar2.vbs:
+* Set new path to ics file somewhere in Dropbox
+* Edit program path and ics path( same path as in previous point ) in rainlendar2.vbs:
 
 ```
     program = "C:\Program Files\Rainlendar2\Rainlendar2.exe"
     ics = "C:\Users\kubenstein\Dropbox\default.ics"
 ```
 
-* put rainlendar2.vbs file in your autostart folder
+* Put rainlendar2.vbs file in your autostart folder
 
 ##Supported systems
 * Windows ( tested on winXP, win7 )
