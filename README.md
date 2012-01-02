@@ -11,7 +11,7 @@ Checking interval is set to 20s.
 
 ##Setup
 * Disable rainleander2 autostart function ( options->general )
-* Set new path to ics file somewhere in Dropbox
+* Set new path, probably pointing to Dropbox folder, to ics file in rainleander2 optins ( options->Calendars-><calendar>->format iCalendar->file name )
 * Edit program path and ics path( same path as in previous point ) in rainlendar2.vbs:
 
 ```
