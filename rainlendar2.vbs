@@ -2,9 +2,6 @@ program = "C:\Program Files\Rainlendar2\Rainlendar2.exe"
 ics = "C:\Users\kuba\Dropbox\default.ics"
 
 
-
-
-
 set fso = CreateObject("Scripting.FileSystemObject")
 set objFSO = CreateObject("Scripting.FileSystemObject")
 set objFile = objFSO.GetFile( ics )
@@ -20,7 +17,7 @@ Do
 		modTime = objFile.DateLastModified
 	end if
 	set colProcessList = GetObject("Winmgmts:").ExecQuery("Select * from Win32_Process")
-	
+
 	' looping thru process finding rainlendar2 to know when exit loop
 	found = false
 	for each objProcess in colProcessList
@@ -28,7 +25,7 @@ Do
 			found = true
 		end if
 	next
-	
+
 	if found = false then
 		WScript.Quit
 	end if
